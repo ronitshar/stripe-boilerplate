@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    body
+        nav.navbar(role="navigation", aria-label="main navigation")
+            .navbar-brand
+                .navbar-end
+                    a.navbar-item(href="http://bulma.io")
+                        span Stripe Boilerplate
+                    a.navbar-item(href="/login")
+                        span Login
+                    a.navbar-item(href="/signup")
+                        span Signup
+                    a.navbar-item(href="/items")
+                        span Items
+                    button.button.navbar-burger
+                        span Login
+                        span Signup
+                        span Items
+        h1.title(style="padding-left: 20px;") Login
+        form(action="/login" method="POST")
+            .field
+                label.label(style="padding-left: 25px;" for="username") Username
+                .control.has-icons-left.has-icons-right(style="width: 200px; padding-left: 25px;")
+                    input.input(type="text", placeholder="Username" name="username" required)
+                    span.icon.is-small.is-left(style="padding-left:40px;")
+                        i.fa.fa-user
+            .field
+                label.label(for="password" style="padding-left: 25px;") Password
+                .control.has-icons-left.has-icons-right(style="width: 200px; padding-left: 25px;")
+                    input.input(type="password", placeholder="Password" name="password" required)
+                    span.icon.is-small.is-left(style="padding-left:40px;")
+                        i.fa.fa-lock
+            button.button.is-link(type="submit" value="Submit") Submit
