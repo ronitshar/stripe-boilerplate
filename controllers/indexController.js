@@ -2,6 +2,6 @@ exports.homePage = (req, res) => {
     res.render('index', { title: 'Your title here!' });
 }
 
-exports.login = (req, res) => {
-    res.render('login')
+exports.register = (req, res) => {
+    res.render('register')
 }

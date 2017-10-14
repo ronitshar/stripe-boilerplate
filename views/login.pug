@@ -8,17 +8,13 @@ html
         nav.navbar(role="navigation", aria-label="main navigation")
             .navbar-brand
                 .navbar-end
-                    a.navbar-item(href="http://bulma.io")
+                    a.navbar-item(href="/")
                         span Stripe Boilerplate
                     a.navbar-item(href="/login")
                         span Login
-                    a.navbar-item(href="/signup")
-                        span Signup
+                    a.navbar-item(href="/register")
+                        span Register
                     a.navbar-item(href="/items")
-                        span Items
-                    button.button.navbar-burger
-                        span Login
-                        span Signup
                         span Items
         h1.title(style="padding-left: 20px;") Login
         form(action="/login" method="POST")

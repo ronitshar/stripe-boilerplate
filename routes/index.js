@@ -4,9 +4,6 @@ const indexController = require('../controllers/indexController');
 const authController = require('../controllers/authController');
 
 router.get('/', indexController.homePage);
-router.get('/login', indexController.login);
-router.post('/login', (req, res, next) => {
-    console.log(req.body.username)
-});
-
+router.get('/register', indexController.register)
+router.post('/register', authController.validateRegister,);
 module.exports = router;
